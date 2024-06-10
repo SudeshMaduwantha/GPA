@@ -17,7 +17,7 @@ function Input({ placeholder, value, onChange, children }) {
           value={value}
           onChange={onChange}
           aria-label={placeholder}
-          maxLength={2}
+          maxLength={3}
         />
         {children}
       </Form>
