@@ -1,0 +1,21 @@
+/* Blogs.module.css */
+.container {
+    text-align: center;
+  }
+  
+  .header {
+    color: rgb(238, 255, 0);
+    font-size: 100px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  

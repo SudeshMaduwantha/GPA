@@ -1,14 +1,24 @@
-import React from 'react'
-import TopicBox from '../components/TopicBox'
-import Content from '../components/Content'
-import { Link } from 'react-router-dom'
+// Home.js
+import React from 'react';
+import styles from './Home.module.scss';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-        <h1>HOME</h1>
-        <Link to='/About'>Go to the about page</Link>
-        <Link to='/Contact'>Go to the Contact page</Link>
+    <div className={styles.container}>
+      <h1 className={styles.header}>HOME</h1>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <a href="/blogs" className={styles.link}>Blogs</a>
+        </li>
+        <li className={styles.listItem}>
+          <a href="/contact" className={styles.link}>Contact</a>
+        </li>
+        <li className={styles.listItem}>
+          <a href="/about" className={styles.link}>About</a>
+        </li>
+      </ul>
     </div>
-  )
-}
+  );
+};
+
+export default Home;

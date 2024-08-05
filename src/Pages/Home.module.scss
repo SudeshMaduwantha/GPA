@@ -1,0 +1,31 @@
+/* Home.module.scss */
+$primary-color: rgb(255, 0, 191);
+$spacing: 10px;
+
+.container {
+  text-align: center;
+}
+
+.header {
+  color: $primary-color;
+  font-size: 100px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listItem {
+  display: inline;
+  margin-right: $spacing;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
